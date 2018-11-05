@@ -3,10 +3,10 @@ let tableData = data;
 let tbody = d3.select("tbody");
 
 
-function getTable(ufoDatas) {
-	ufoDatas.forEach(datas => {
+function getTable(ufoEntry) {
+	ufoEntry.forEach(entry => {
 		var row = tbody.append("tr");
-		Object.values(datas).forEach(value =>{
+		Object.values(entry).forEach(value =>{
         var cell = row.append("td");
         cell.text(value);
 	});
@@ -51,6 +51,8 @@ function getTable(ufoDatas) {
    
         tbody.html('');
         getTable(filteredData);
+
+        
     });
     
     

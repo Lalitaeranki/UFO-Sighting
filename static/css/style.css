@@ -68,13 +68,17 @@ select {
 }
 
 #table-area th {
-  text-align: center;
+  text-align: left;
 }
 
 #table-area th:first-child,
 #table-area th:nth-child(2),
 #table-area th:nth-child(6) {
   min-width: 70px;
+}
+#table-area td {
+  text-align: left;
+  padding: 8px;
 }
 
 .loader {

@@ -29,11 +29,11 @@
       <div class="row ">
          <div class="col-md-12">
                     <div class="form-group">
-                    <input class="form-control" id="datetime" type="text" placeholder="Date">
-                    <input class="form-control" id="enterCity" type="text" placeholder="City">
-                    <input class="form-control" id="enterState" type="text" placeholder="State">
-                    <input class="form-control" id="enterCountry" type="text" placeholder="Country">
-                    <input class="form-control" id="enterShape" type="text" placeholder="UFO Shape">
+                    <input class="form-control" id="datetime" onfocus="this.value=''"type="text" placeholder="Date">
+                    <input class="form-control" id="enterCity" onfocus="this.value=''"type="text" placeholder="City">
+                    <input class="form-control" id="enterState" onfocus="this.value=''"type="text" placeholder="State">
+                    <input class="form-control" id="enterCountry" onfocus="this.value=''"type="text" placeholder="Country">
+                    <input class="form-control" id="enterShape" onfocus="this.value=''"type="text" placeholder="UFO Shape">
                     <button id="filter-btn" type="submit" class="btn btn-default">Filter Table</button>
                     <button id="reset-btn" type="submit" class="btn btn-default">Reset Table</button>
                     </div>
@@ -42,7 +42,7 @@
     <div class="row">
         <div class="col-md-12">
           <div id="table-area">
-            <table id="ufo-table" class="table table-striped"border=1px solid black >
+            <table id="ufo-table" class="table table-striped"border=1px solid black style="overflow-x:auto;">
               <thead>
                 <tr>
                   <th class="table-head">Date</th>
